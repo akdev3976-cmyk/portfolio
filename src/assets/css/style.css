@@ -1,6 +1,28 @@
+
+
+
+
+
+
+
+
+
+
 body{
-    background-color: rgb(14, 14, 49);
+    background: linear-gradient( to left, rgb(8, 8, 81), rgb(101, 26, 26), rgb(5, 93, 5));
     color: #fff;
+    animation-name: backgroundAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundAnimation {
+    from{
+        background: linear-gradient( to left, rgb(8, 8, 81), rgb(101, 26, 26), rgb(5, 93, 5));
+    }
+    to{
+        background: linear-gradient( to right, rgb(8, 8, 81), rgb(101, 26, 26), rgb(5, 93, 5));
+    }
 }
 
 .titre{
@@ -60,6 +82,7 @@ img{
 }
 
 .btn{
+    width: 100px;
     background-color: rgb(37, 37, 228);
     padding: 10px;
     border-radius:12px;
@@ -234,6 +257,47 @@ img{
     gap:2rem;
     margin-top: 50px;
 }
+
+
+
+.contact{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap:1.5rem;
+    justify-content: center;
+}
+
+.formulaire{
+    box-shadow: 0px 0px 10px 0px blue;
+    border-radius: 12px; 
+    padding: 20px;
+}
+
+.formulaire div{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    text-align:center;
+}
+.formulaire .input{
+    border: none;
+    border-radius: 12px;
+    width: 90%;
+    height: 10px;
+    padding: 10px;
+}
+
+.formulaire input:hover{
+    box-shadow: 0px 0px 10px 0px rgb(5, 203, 252);
+}
+
+.formulaire textarea{
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+
 
 
 
